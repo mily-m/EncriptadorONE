@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+
+    <title>Encriptador Alura</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <img class="logo" src="Images/Vector.png" alt="Logo">
+            <h1 class="titlelogo">AluEncrip</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="main">
+            <section class="containerA">
+                <textarea class="mensaje" id="mensaje" placeholder="Ingrese el texto aquí"></textarea>
+                <div class="datos">
+                    <div class="informacion">
+                        <img class="exclamation" src="Images/bi_exclamation-circle-fill.png" alt="bi_exclamation">
+                        <p class="info">solo letras minúsculas y sin acentos.</p>
+                    </div>
+                    <div class="botones">
+                        <button class="btnencriptar" onclick="btnEncriptar()">Encriptar</button>
+                        <button class="btndesencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="containerB">
+                <div class="text-respuesta">
+                    <textarea class="respuesta hidden" id="respuesta"></textarea>
+                    <img class="image" src="Images/butterfly.png" alt="">
+                    <p class="placeholder">Ningún mensaje fue encontrado.</p>
+                    <p class="placeholderb">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    <button class="btncopiar hidden" onclick="copiar()">Copiar</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <h6 class="creator">Creado por Mily Machorro</h6>
+
+            <a href="https://www.linkedin.com/in/mily-machorro" target="_blank">
+                <img class="linkedin" src="Images/linkedin.png" alt="LinkedIn">
+              </a>
+              
+              <a href="https://github.com/" target="_blank">
+                <img class="github" src="Images/github.png" alt="GitHub">
+              </a>
+              
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
